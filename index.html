@@ -1,0 +1,150 @@
+<html>
+
+<head>
+<title>HCI ASSIGNMENT-02</title>
+<style>
+    body{
+        background-image: url(BackgroundImage.jpg);
+    }
+</style>
+</head>
+
+<body>
+<h1 style="text-align: center; color: white;">HCI ASSIGNMENT - 02</h1>
+<br><br>
+<h2 style="color: white;">Restaurant Reservation:</h2>
+<br><br>
+<form>
+<label for="Forename" style="color: white;">Forename:</label>
+    <input type="text" name="Forename"> <br><br><br>
+
+    <label for="Surname" style="color: white;">Surname:</label>
+    <input type="text" name="Surname"> <br><br><br>
+
+    <label for="PhoneNumber" style="color: white;">Phone Number (Please include country code):</label>
+    <input type="text" name="PhoneNumber"> <br><br><br>
+
+    <label for="Email" style="color: white;">Email:</label>
+    <input type="email" name="Email"> <br><br><br>
+
+    <label for="ReserveTime" style="color: white;">What time will you reserve:</label>
+    <input type="datetime-local" id="ReserveTime" name="ReserveTime"> <br>
+    <p style="color: white;">We are open everyday except public holidays from 10 a.m. until 10 p.m.</p> <br><br>
+
+    <label for="People" style="color: white;">How many people will come (up to 10):</label>
+    <input type="number" name="People" min="1" max="10" value="1"> <br>
+    <p style="color: white;">For more than 10 people, please send an email to reservetable@loremipsum.com, 7 days before your arrival.</p> <br><br>
+
+    <label for="Area" style="color: white;">Which area do you want to dine in:</label> <br><br>
+    <input type="radio" name="Area" id="Smoking" value="Smoking">
+    <label for="Smoking" style="color: white;">Smoking Area</label> <br><br>
+    <input type="radio" name="Area" id="NonSmoking" value="NonSmoking">
+    <label for="NonSmoking" style="color: white;">Non-Smoking Area</label> <br><br><br>
+
+    <label for="FloorPriority" style="color: white;">Will there be elderly or pregnant or disabled people with you:</label> <br><br>
+    <input type="radio" name="FloorPriority" id="FloorPriorityYes" value="FloorPriorityYes">
+    <label for="FloorPriorityYes" style="color: white;">Yes</label> <br><br>
+    <input type="radio" name="FloorPriority" id="FloorPriorityNo" value="FloorPriorityNo">
+    <label for="FloorPriorityNo" style="color: white;">No</label> <br><br><br>
+
+    <label for="Dietary" style="color: white;">Please select any dietary requirements that your group needs:</label> <br><br>
+    <input type="checkbox" id="Diet1" name="Diet1" value="Vegetarian">
+    <label for="Diet1" style="color: white;">Vegetarian</label><br><br>
+    <input type="checkbox" id="Diet2" name="Diet2" value="Vegan">
+    <label for="Diet2" style="color: white;">Vegan</label><br><br>
+    <input type="checkbox" id="Diet3" name="Diet3" value="Gluten-Free">
+    <label for="Diet3" style="color: white;">Gluten-Free</label><br><br>
+    <input type="checkbox" id="Diet4" name="Diet4" value="Lactose-Free">
+    <label for="Diet4" style="color: white;">Lactose-Free</label><br><br>
+    <input type="checkbox" id="Diet5" name="Diet5" value="Nut-Free">
+    <label for="Diet5" style="color: white;">Nut-Free</label><br><br>
+    <p style="color: greenyellow;">Please understand that while we do our best in handling dietary requirements and allergens, there is still a risk of cross contamination.</p>
+    <br><br><br>
+    <input type="submit">
+
+</form>
+
+<br><br><br><br><br>
+
+</fieldset>
+<table border="1" style="color: white;">
+    <tr>
+        <th>Reservation No.</th>
+        <th>Forename</th>
+        <th>Surname</th>
+        <th>Phone Number</th>
+        <th>Email</th>
+        <th>Reservation Time</th>
+        <th>Number of People</th>
+        <th>Dining Area</th>
+        <th>Elderly/Pregnant/Disabled People</th>
+        <th>Vegetarian</th>
+        <th>Vegan</th>
+        <th>Gluten-Free</th>
+        <th>Lactose-Free</th>
+        <th>Nut-Free</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>John</td>
+        <td>Doe</td>
+        <td>+62 000 0000 0000</td>
+        <td>johndoe@loremipsum.com</td>
+        <td>30/10/2023, 14:30</td>
+        <td rowspan="2">4</td>
+        <td rowspan="3">Non-Smoking</td>
+        <td colspan="3">Yes</td>
+        <td colspan="3">No</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Mary</td>
+        <td>Sue</td>
+        <td>+65 1111 1111</td>
+        <td>marysue@loremipsum.com</td>
+        <td>01/11/2023, 12:15</td>
+        <td colspan="4">No</td>
+        <td colspan="2">Yes</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>John</td>
+        <td>Sue</td>
+        <td>+62 555 5555 5555</td>
+        <td>jsue@loremipsum.com</td>
+        <td>29/11/2023, 15:30</td>
+        <td>2</td>
+        <td>Yes</td>
+        <td rowspan="2">No</td>
+        <td>No</td>
+        <td rowspan="2">Yes</td>
+        <td>No</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Mary</td>
+        <td>Doe</td>
+        <td>+62 333 3333 3333</td>
+        <td>mary.doe@loremipsum.com</td>
+        <td>12/12/2023, 18:00</td>
+        <td>8</td>
+        <td>Smoking</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+    </table></fieldset>
+    </body>
+
+</table>
+
+</body>
+
+</html>
+
+<!--
+Sources
+Web background image source = https://unsplash.com/photos/1527pjeb6jg
+-->
